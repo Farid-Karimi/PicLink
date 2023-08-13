@@ -185,8 +185,7 @@
                         <div uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t">
                             <ul>
                                 <li><a href="/settings"> Account setting </a> </li>
-                                <li><a href="explore.html">explore </a> </li>
-                                <li><a href="#"> Help </a> </li>
+                                <li><a href="/profile_page/{{user_profile.user.username}}"> Profile </a> </li>
                                 <li><a href="logout"> Log Out</a></li>
                             </ul>
                         </div>
@@ -220,7 +219,7 @@
                                     <span class="block capitalize font-semibold "> <a href="/profile_page/{{post.user}}">{{post.user}}</a> </span>
                                 </div>
                               <div>
-                                <a href="#"> <i class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1 "></i> </a>
+                                <!-- <a href="#"> <i class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1 "></i> </a> -->
                                 <div class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100  " uk-drop="mode: hover;pos: top-right">
                               
                                     <ul class="space-y-1">
