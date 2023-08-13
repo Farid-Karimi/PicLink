@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
-from .models import profile, post, likepost
+from .models import profile, post, likepost, followersCount
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -43,7 +43,7 @@ def signup(request):
                 user_model = User.objects.get(username=username)
                 new_profile = profile.objects.create(user=user_model, id_user=user_model.id)
                 new_profile.save()
-                return redirect('signup')
+                return redirect('signin')
         else:
             messages.info(request, 'Password Not Matching')
             return redirect('signup')
@@ -119,11 +119,25 @@ def profile_page(request, pk):
     user_posts = post.objects.filter(user=user_object)
     user_post_length = len(user_posts)
     
+    follower = request.user.username
+    user = pk
+
+    if followersCount.objects.filter(follower=follower,user=user).first():
+        button_text = 'Unfollow'
+    else:
+        button_text = 'Follow'
+
+    user_followers = len(followersCount.objects.filter(user=pk))
+    user_following = len(followersCount.objects.filter(follower=pk))
+
     context = {
         'user_object' : user_object,
         'user_profile' : user_profile,
         'user_posts' : user_posts,
         'user_post_length' : user_post_length,
+        'button_text' : button_text,
+        'user_followers' : user_followers,
+        'user_following' : user_following,
     }
 
     return render(request, 'profile.html', context)
@@ -147,4 +161,21 @@ def like_post(request):
         like_filter.delete()
         post_instance.no_of_likes = post_instance.no_of_likes - 1
         post_instance.save()
+        return redirect('/')
+    
+@login_required(login_url='signin')
+def follow(request):
+    if request.method == 'POST':
+        follower = request.POST['follower']
+        user = request.POST['user']
+        
+        if followersCount.objects.filter(follower=follower, user=user).first():
+            delete_follower = followersCount.objects.get(follower=follower, user=user)
+            delete_follower.delete()
+            return redirect('/profile_page/'+user)
+        else:
+            new_follower = followersCount.objects.create(follower=follower, user=user)
+            new_follower.save()
+            return redirect('/profile_page/'+user)
+    else:
         return redirect('/')

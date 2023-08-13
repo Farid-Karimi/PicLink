@@ -27,7 +27,8 @@
 	<section>
 			<div class="feature-photo">
 				<figure><img src="{% static 'images/resources/timeline-1.jpg' %}" alt=""></figure>
-				<form>
+				<form action="/follow" method="POST">
+					{% csrf_token %}
 					<div class="add-btn">
 					<span style="color: white; font-size: 27px; margin-right: 520px;"><b><u><a href="/">Home</a></u></b></span>
 					
@@ -38,10 +39,23 @@
 					{% else %}
 					<span style="color: white; font-size: 27px;"><b>{{user_post_length}} Posts</b></span>
 					{% endif %}
-					<span style="color: white; font-size: 27px;"><b>1.7m followers</b></span>
-					<span style="color: white; font-size: 27px;"><b>3.5k following</b></span>
-					<a href="" title="" data-ripple=""><button style="background-color: #ffc0cb; border: #ffc0cb;">Follow</button></a>
 					
+					{% if user_followers == 0 or user_followers == 1 %}
+					<span style="color: white; font-size: 27px;"><b>{{user_followers}} follower</b></span>
+					{% else %}
+					<span style="color: white; font-size: 27px;"><b>{{user_followers}} followers</b></span>
+					{% endif %}
+					<span style="color: white; font-size: 27px;"><b>{{user_following}} following</b></span>
+					
+					<input type="hidden" value="{{user.username}}" name="follower"/>
+					<input type="hidden" value="{{user_object.username}}" name="user"/>
+					
+					{% if user_object.username == user.username %}
+					<a href="/settings" data-ripple="">Settings</a>
+					{% else %}
+					<a data-ripple=""><button type="submit" style="background-color: #ffc0cb; border: #ffc0cb;">{{button_text}}</button></a>
+					{% endif %}
+
 					</div>
 				</form>
 
@@ -155,7 +169,7 @@
 
 	
 	
-	<script data-cfasync="false" src="{% static '../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="js/main.min.js"></script>
+	<script data-cfasync="false" src="{% static '../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'js/main.min.js' %}" ></script>
 	<script src="{% static 'js/script.js' %}"></script>
 
 </body>	
