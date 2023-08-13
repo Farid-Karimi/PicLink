@@ -11,4 +11,5 @@ urlpatterns = [
     path('like_post', views.like_post, name='like_post'),
     path('profile_page/<str:pk>/', views.profile_page, name='profile_page'),
     path('follow', views.follow, name='follow'),
+    path('search', views.search, name='search'),
 ]
