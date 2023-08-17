@@ -12,6 +12,17 @@ With picLink, you can:
 - ✅ Download photos you like
 - ✅ Build a community around your common passion for photography
 
+<details>
+  <summary><h3>click here to see the images</h3></summary>
+  
+  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/cc567d31-9275-4f4c-a1de-dd7ec60d7b53" name="Screenshot (225)">
+  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/69a7e1b3-2045-4e44-8d34-3b06ffeea8b9" name="Screenshot (224)">
+  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/b749db59-4687-4f26-a205-846c05d66c4d" name="Screenshot (228)">
+  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/fac0337d-af90-4cec-8761-b1563c3d1c2c" name="Screenshot (226)">
+  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/40769275-036b-476e-9e4e-bc44d521190a" name="Screenshot (229)">
+  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/701b0c0b-560c-4eed-8323-d00af20c717a" name="Screenshot (230)">
+</details>
+
 ## Installation
 
 Getting started with picLink is simple:
@@ -77,18 +88,6 @@ Now that you have picLink up and running, here are some of the things you can do
 - 💬 **Comment on photos** - Leave your thoughts and feedback on photos.
 
 - ❤️ **Like photos** - Show appreciation for incredible shots.
-
-## Images
-<details>
-  <summary><h3>click here to see the images</h3></summary>
-  
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/cc567d31-9275-4f4c-a1de-dd7ec60d7b53" name="Screenshot (225)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/69a7e1b3-2045-4e44-8d34-3b06ffeea8b9" name="Screenshot (224)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/b749db59-4687-4f26-a205-846c05d66c4d" name="Screenshot (228)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/fac0337d-af90-4cec-8761-b1563c3d1c2c" name="Screenshot (226)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/40769275-036b-476e-9e4e-bc44d521190a" name="Screenshot (229)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/701b0c0b-560c-4eed-8323-d00af20c717a" name="Screenshot (230)">
-</details>
 
 ## Future Enhancements
 
