@@ -15,12 +15,14 @@ With picLink, you can:
 <details>
   <summary><h3>click here to see the images</h3></summary>
   
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/cc567d31-9275-4f4c-a1de-dd7ec60d7b53" name="Screenshot (225)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/69a7e1b3-2045-4e44-8d34-3b06ffeea8b9" name="Screenshot (224)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/b749db59-4687-4f26-a205-846c05d66c4d" name="Screenshot (228)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/fac0337d-af90-4cec-8761-b1563c3d1c2c" name="Screenshot (226)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/40769275-036b-476e-9e4e-bc44d521190a" name="Screenshot (229)">
-  <img src="https://github.com/Farid-Karimi/PicLink/assets/118434072/701b0c0b-560c-4eed-8323-d00af20c717a" name="Screenshot (230)">
+![Screenshot (224)](https://github.com/Farid-Karimi/PicLink/assets/118434072/8fbf1386-5a6c-4b83-a88f-8e4e31ae01dd)
+![Screenshot (225)](https://github.com/Farid-Karimi/PicLink/assets/118434072/f9b4e1fd-ae44-40d1-8e9d-450da4c8c1bf)
+![Screenshot (226)](https://github.com/Farid-Karimi/PicLink/assets/118434072/3b23ba2f-d8cd-4feb-a564-00bb95b4c5f7)
+![Screenshot (228)](https://github.com/Farid-Karimi/PicLink/assets/118434072/3ef2e9b3-b037-4620-b63d-c02a83c765c4)
+![Screenshot (229)](https://github.com/Farid-Karimi/PicLink/assets/118434072/718de054-3ab3-441b-a203-50847611c755)
+![Screenshot (230)](https://github.com/Farid-Karimi/PicLink/assets/118434072/392b7f7a-2352-4c8c-8ab4-6c88362ca2d6)
+
+
 </details>
 
 ## Installation
